@@ -59,14 +59,15 @@ document.querySelector('.check').addEventListener('click', function() {
     }
 });
 
+// When click button again
 document.querySelector('.again').addEventListener('click', function() {
 
     score = 20;
-    secretNumber = Math.trunc(Math.random()*20)+1;
+    secretNumber = Math.trunc(Math.random()*20)+1;      //reset secret number
 
-    document.querySelector('.message').textContent = 'Start guessing...';
+    document.querySelector('.message').textContent = 'Start guessing...';       //Back to default
 
-    document.querySelector('.score').textContent = score;
+    document.querySelector('.score').textContent = score;       
 
     document.querySelector('.number').textContent = '?';
 
@@ -74,6 +75,6 @@ document.querySelector('.again').addEventListener('click', function() {
 
     document.querySelector('body').style.backgroundColor = ' #222';
 
-    document.querySelector('.number').style.width = '15rem';
+    document.querySelector('.number').style.width = '15rem';        //width change to default
     
 });
